@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="./dist/output.css"/>
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/asset/cahas.png"/>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-100 font-[Lato] min-h-screen flex flex-col items-center justify-center space-y-6 tracking-wide">
+    
+    <header class="fixed top-0 w-full py-3 text-white z-50">
+      <nav class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10">
+        <div class="flex items-center space-x-2">
+          <img src="/asset/logo.png" alt="Skycast Logo" class="h-16 w-auto"/>
+          <span class="text-2xl font-bold">Skycast</span>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="flex-1 mx-8">
+          <div class="relative w-full max-w-md mx-auto">
+            <input 
+              type="text" 
+              placeholder="Search city..." 
+              class="w-full rounded-full bg-gray-800 text-gray-200 placeholder-gray-400 py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
+            />
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-gray-400"></i>
+          </div>
+        </div>
+        
+        <!-- Tombol Current Location -->
+        <div>
+          <button class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-full transition-all duration-200 shadow-md hover:shadow-blue-500/30">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <span>Current Location</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+  <main class="">
+    <!-- Current Weather -->
+    <section class="">
+      <div class="">
+        <h2 class="">Now</h2>
+        <p class="">25&deg;<sup>c</sup></p>
+        <img src="./asset/01d.png" alt="Current Weather Icon" class=""/>
+        <p class="">Overcast Clouds</p>
+        <ul class="">
+          <li class="">
+            <i class="fa-regular fa-calendar" style="color: #ffffff;"></i>
+            <p class="">Saturday 18, Oct </p>
+          </li>
+          <li class="">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+            <p class="">Banyumas, Purwokerto</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+    <script src="https://kit.fontawesome.com/5ea0eadb61.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# Tailwind / build output
+dist/
+
+# Env file (API keys, credentials)
+.env
+
+# Log files
+*.log
+
+# System / OS files
+.DS_Store
+Thumbs.db
